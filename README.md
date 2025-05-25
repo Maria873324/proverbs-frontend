@@ -72,16 +72,14 @@ npm install
 
 #### 3️⃣ Start the server 
 npm start
-```
----
 
-```
+# ⚠️
 The backend will run at:
 http://localhost:3001/proverbs
-⚠️ If running locally, don’t forget to change the API base URL in the frontend Axios config from the Render URL to: http://localhost:3001/proverbs
+If running locally, don’t forget to change the API base URL in the frontend Axios config from the Render URL to: http://localhost:3001/proverbs
 
 ## 💻 Frontend Setup
-`
+
 ### 1️⃣ Clone the frontend repository
 
 git clone https://github.com/Maria873324/proverbs-frontend.git
