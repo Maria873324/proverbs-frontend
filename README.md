@@ -78,11 +78,14 @@ The backend will run at:
 http://localhost:3001/proverbs
 If running locally, don’t forget to change the API base URL in the frontend Axios config from the Render URL to: http://localhost:3001/proverbs
 
+---
+
 ## 💻 Frontend Setup
 
 ### 1️⃣ Clone the frontend repository
 
 git clone https://github.com/Maria873324/proverbs-frontend.git
+
 cd proverbs-frontend
 
 ### 2️⃣ Install dependencies
@@ -91,10 +94,10 @@ npm install
 ### 3️⃣ Start the app
 npm start
 
----
+
 The frontend will run at:
 http://localhost:5000
---- 
+``
 
 # 📦 Features
 ```
@@ -108,7 +111,8 @@ http://localhost:5000
 
 . ❌ Delete proverbs
 
-```
+---
+
 # 🧠 Technologies Used
 ```
 1.  Axios for HTTP requests
@@ -118,27 +122,36 @@ http://localhost:5000
 3.  JSON file storage
 
 4.  Render for deployment
-```
+--- 
+
 # 🧪 Bonus Features
 ```
 ✅ Filter proverbs by category using query parameters
+
+---
 ```
 ## 📸 Screenshots
 
 ### 🏠 Home Page
+
 ![Home Page](./screenshots/home.png)
 
 ### 🔍 Filter by Category
+
 ![Filter by Category](./screenshots/filter.png)
 
 ### ➕ Add Proverb Form
+
 ![Add Proverb Form](./screenshots/add.png)
 
 ### 📝 Edit Proverb
+
 ![Edit Proverb](./screenshots/edit.png)
 
 ### ❌ Delete Proverb Confirmation
+
 ![Delete Proverb](./screenshots/delete.png)
 
 ### 📄 Proverb Details
+
 ![Proverb Details](./screenshots/details.png)
