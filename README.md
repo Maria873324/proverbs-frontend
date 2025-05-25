@@ -97,7 +97,7 @@ npm start
 
 The frontend will run at:
 http://localhost:5000
-``
+
 
 # 📦 Features
 ```
@@ -111,10 +111,10 @@ http://localhost:5000
 
 . ❌ Delete proverbs
 
----
+```
 
 # 🧠 Technologies Used
-```
+
 1.  Axios for HTTP requests
 
 2.  Express.js (backend)
