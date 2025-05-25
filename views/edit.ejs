@@ -1,10 +1,4 @@
-<% if (message) { %>
-  <div class="alert success"><%= message %></div>
-<% } %>
 
-<% if (error) { %>
-  <div class="alert error"><%= error %></div>
-<% } %>
 <%- include('partials/header') %>
 <h2>Edit Proverb</h2>
 <form action="/proverbs/<%= proverb.id %>?_method=PUT" method="POST">
