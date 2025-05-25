@@ -1,0 +1,16 @@
+<%- include('partials/header') %>
+<h2>Add New Proverb</h2>
+
+<form action="/proverbs" method="POST">
+    <input name="textDari" placeholder="Dari" required>
+    <input name="textPashto" placeholder="Pashto" required>
+    <input name="translationEn" placeholder="English Translation" required>
+    <input name="meaning" placeholder="Meaning" required>
+    <input name="category" placeholder="Category" required>
+    <button type="submit">Add</button>
+</form>
+
+<a href="/">Cancel</a>
+
+<%- include('partials/footer') %>
+

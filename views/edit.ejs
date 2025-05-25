@@ -1,0 +1,20 @@
+<% if (message) { %>
+  <div class="alert success"><%= message %></div>
+<% } %>
+
+<% if (error) { %>
+  <div class="alert error"><%= error %></div>
+<% } %>
+<%- include('partials/header') %>
+<h2>Edit Proverb</h2>
+<form action="/proverbs/<%= proverb.id %>?_method=PUT" method="POST">
+    <input name="textDari" value="<%= proverb.textDari %>" required>
+    <input name="textPashto" value="<%= proverb.textPashto %>" required>
+    <input name="translationEn" value="<%= proverb.translationEn %>" required>
+    <input name="meaning" value="<%= proverb.meaning %>" required>
+    <input name="category" value="<%= proverb.category %>" required>
+    <button type="submit">Update</button>
+</form>
+<a href="/proverbs/<%= proverb.id %>">Cancel</a>
+
+<%- include('partials/footer') %>

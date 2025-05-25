@@ -1,0 +1,44 @@
+<%- include('partials/header') %>
+<h1>Afghan Proverbs</h1>
+<% if (typeof message !== 'undefined' && message) { %>
+  <div class="alert success"><%= message %></div>
+<% } %>
+
+<% if (typeof error !== 'undefined' && error) { %>
+  <div class="alert error"><%= error %></div>
+<% } %>
+<%- include('partials/header') %>
+
+<form method="GET" action="/" style="margin-bottom: 30px;">
+  <label for="category">Filter by Category:</label>
+  <select name="category" id="category">
+    <option value="">All</option>
+    <option value="wisdom">Wisdom</option>
+    <option value="advice">Advice</option>
+    <option value="friendship">Friendship</option>
+    <option value="perseverance">Perseverance</option>
+    <option value="humor">Humor</option>
+    <option value="patience">Patience</option>
+    <option value="justice">Justice</option>
+    <option value="family">Family</option>
+    <option value="culture">Culture</option>
+    <option value="religion">Religion</option>
+  </select>
+  <button type="submit">Filter</button>
+</form>
+
+<ul>
+    <% proverbs.forEach(p => { %>
+        <li>
+            <strong>Dari:</strong> <%= p.textDari %><br>
+            <strong>Pashto:</strong> <%= p.textPashto %><br>
+            <strong>English:</strong> <%= p.translationEn %><br>
+            <strong>Category:</strong> <%= p.category %><br>
+            <a href="/proverbs/<%= p.id %>">View</a>
+        </li>
+    <% }) %>
+</ul>
+
+<a href="/add">Add a New Proverb</a>
+
+<%- include('partials/footer') %>
